@@ -1,4 +1,47 @@
 body {
-  background-color: grey;
-  color: white;
+  background-color: rgb(70, 70, 70);
+  color: wheat;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+  border-radius: 8px;
+  max-width: 100%;
+  height: auto;
+}
+img.hover {
+  transform: scaleX(-1);
+}
+h1,
+h2 {
+  color: cornflowerblue;
+  line-height: 0.8;
+}
+#ingredients dl {
+  list-style-type: upper-roman;
+  color: rgb(241, 206, 140);
+  padding: 10px;
+}
+dl dt {
+  color: cornflowerblue;
+  text-indent: 20px;
+  line-height: 2;
+}
+#ingredients {
+  background-color: rgb(43, 43, 43);
+}
+#description {
+  text-align: justify;
+}
+#recepie dl {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+a:visited {
+  color: wheat;
+}
+a:link,
+a:hover {
+  color: rgb(241, 206, 140);
 }
