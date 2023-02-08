@@ -3,7 +3,9 @@ body {
   color: wheat;
   font-family: Arial, Helvetica, sans-serif;
 }
-
+* {
+  box-sizing: border-box;
+}
 img {
   border-radius: 8px;
   max-width: 100%;
@@ -12,24 +14,37 @@ img {
 img.hover {
   transform: scaleX(-1);
 }
+.grid {
+  width: 80;
+}
 h1,
-h2 {
+h2,
+h4 {
   color: cornflowerblue;
   line-height: 0.8;
+  font-weight: 500;
+}
+a:visited {
+  color: wheat;
 }
 #ingredients dl {
   list-style-type: upper-roman;
-  color: rgb(241, 206, 140);
+  background-color: rgb(43, 43, 43);
+  width: 300px;
+  border: 50px red;
   padding: 10px;
+  margin: 20px;
+}
+a:hover,
+#ingredients dl {
+  color: rgb(244, 204, 130);
 }
 dl dt {
   color: cornflowerblue;
   text-indent: 20px;
   line-height: 2;
 }
-#ingredients {
-  background-color: rgb(43, 43, 43);
-}
+
 #description {
   text-align: justify;
 }
@@ -37,11 +52,4 @@ dl dt {
   list-style-type: none;
   padding: 0px;
   margin: 0px;
-}
-a:visited {
-  color: wheat;
-}
-a:link,
-a:hover {
-  color: rgb(241, 206, 140);
 }
